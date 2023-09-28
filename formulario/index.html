@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dev</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+        <form action="formulario.php">
+            <div>
+                <h1>Cadastro de DEVs</h1>
+                <p>Complete suas informacoes</p>
+            </div>
+                <table class="label">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                    </tr>
+                    <tr>
+                        <th><input type="text" id="nome" name="nome"></th>
+                        <th><input type="" id="sobrenome" name="sobrenome"></th>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <th><input type="text" id="email" name="email"></th>
+                    </tr>
+                </table>
+         
+                <h2>De qual lado da aplicacao voce desenvolve?</h2>
+                <input type="radio" name="front-end" id="front-end" value="front-end">
+                <Label for="front-end">Front-end</Label><br>
+                <input type="radio" name="back-end" id="back-end" value="back-end">
+                <label for="back-end">Back-end</label><br>
+                <input type="radio" name="fullstack" id="fullstack" value="fullstack">
+                <label for="fullstack">Fullstack</label><br>
+            
+                <h2>Senioridade</h2>
+                <select id="experiencia" name="experiencia" class="selecione">
+                    <option value="Selecione">Selecione</option>
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Senior</option>
+                </select>
+            
+                <h2>Selecione as tecnologias que utiliza:</h2>
+                <input type="checkbox" name="html" id="">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="css" id="">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="javascript" id="">
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" name="PHP" id="">
+                <label for="php">PHP</label>
+                <input type="checkbox" name="C#" id="">
+                <label for="c#">C#</label>
+                <input type="checkbox" name="python" id="">
+                <label for="python">Python</label>
+                <input type="checkbox" name="java" id="">
+                <label for="java">Java</label>
+            
+                <h2>Conte um pouco mais da sua experiencia:</h2>
+                <textarea class="mensagem" name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
+                <br><br>
+                <div>
+                    <input type="submit" value="Concluido" class="botao">
+            </div>
+            
+        
+        </form>
+    
+    
+   
+</body>
+</html>
